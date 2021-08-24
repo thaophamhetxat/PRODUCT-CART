@@ -28,7 +28,7 @@
         <tr th:each="product:${list}">
             <td th:text="${product.name}"></td>
             <td th:text="${product.price}"></td>
-            <td><a onclick=" return confirm('ĐÃ THÊM VÀO GIỎ HÀNG')" th:href="@{/add/__${product.id}__(action='list')}">Add To Cart</a></td>
+            <td><a onclick=" return confirm('YOU CART')" th:href="@{/add/__${product.id}__(action='list')}">Add To Cart</a></td>
         </tr>
         </tbody>
     </table>
